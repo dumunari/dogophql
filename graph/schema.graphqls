@@ -1,0 +1,56 @@
+type Dog {
+    id: ID!
+    name: String!
+    age: Int
+    breed: Breed!
+    puppies: [Puppy!]
+}
+
+type Breed {
+    id: ID!
+    name: String!
+}
+
+type Puppy {
+    id: ID!
+    name: String!
+    color: String
+    breed: Breed!
+    parents: [Dog!]!
+}
+
+input NewDog {
+    name: String!
+    age: Int
+    breedId: ID!
+    puppiesId: [String!]
+}
+
+input NewBreed {
+    name: String!
+}
+
+input NewPuppy {
+    name: String!
+    color: String
+    breedId: ID!
+    parentsId: [String!]!
+}
+
+input AddPuppy {
+    puppyId: ID!
+    parentsId: [ID!]!
+}
+
+type Query {
+    dogs: [Dog]
+    breeds: [Breed]
+    puppies: [Puppy]
+}
+
+type Mutation {
+    createDog(input: NewDog!): Dog!
+    createBreed(input: NewBreed!): Breed!
+    createPuppy(input: NewPuppy!): Puppy!
+    addPuppyToParents(input: AddPuppy!): [Dog!]!
+}
