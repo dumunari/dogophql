@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/dumunari/gophql/graph/generated"
-	"github.com/dumunari/gophql/graph/model"
+	"github.com/dumunari/dogophql/graph/generated"
+	"github.com/dumunari/dogophql/graph/model"
 )
 
 func (r *mutationResolver) CreateDog(ctx context.Context, input model.NewDog) (*model.Dog, error) {

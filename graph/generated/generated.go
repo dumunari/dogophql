@@ -11,7 +11,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/dumunari/gophql/graph/model"
+	"github.com/dumunari/dogophql/graph/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )
@@ -390,7 +390,7 @@ func (ec *executionContext) field_Mutation_addPuppyToParents_args(ctx context.Co
 	var arg0 model.AddPuppy
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNAddPuppy2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐAddPuppy(ctx, tmp)
+		arg0, err = ec.unmarshalNAddPuppy2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐAddPuppy(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -405,7 +405,7 @@ func (ec *executionContext) field_Mutation_createBreed_args(ctx context.Context,
 	var arg0 model.NewBreed
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNNewBreed2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐNewBreed(ctx, tmp)
+		arg0, err = ec.unmarshalNNewBreed2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐNewBreed(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -420,7 +420,7 @@ func (ec *executionContext) field_Mutation_createDog_args(ctx context.Context, r
 	var arg0 model.NewDog
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNNewDog2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐNewDog(ctx, tmp)
+		arg0, err = ec.unmarshalNNewDog2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐNewDog(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -435,7 +435,7 @@ func (ec *executionContext) field_Mutation_createPuppy_args(ctx context.Context,
 	var arg0 model.NewPuppy
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNNewPuppy2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐNewPuppy(ctx, tmp)
+		arg0, err = ec.unmarshalNNewPuppy2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐNewPuppy(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -701,7 +701,7 @@ func (ec *executionContext) _Dog_breed(ctx context.Context, field graphql.Collec
 	}
 	res := resTmp.(*model.Breed)
 	fc.Result = res
-	return ec.marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
+	return ec.marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Dog_puppies(ctx context.Context, field graphql.CollectedField, obj *model.Dog) (ret graphql.Marshaler) {
@@ -733,7 +733,7 @@ func (ec *executionContext) _Dog_puppies(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]*model.Puppy)
 	fc.Result = res
-	return ec.marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppyᚄ(ctx, field.Selections, res)
+	return ec.marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppyᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createDog(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -775,7 +775,7 @@ func (ec *executionContext) _Mutation_createDog(ctx context.Context, field graph
 	}
 	res := resTmp.(*model.Dog)
 	fc.Result = res
-	return ec.marshalNDog2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx, field.Selections, res)
+	return ec.marshalNDog2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createBreed(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -817,7 +817,7 @@ func (ec *executionContext) _Mutation_createBreed(ctx context.Context, field gra
 	}
 	res := resTmp.(*model.Breed)
 	fc.Result = res
-	return ec.marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
+	return ec.marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createPuppy(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -859,7 +859,7 @@ func (ec *executionContext) _Mutation_createPuppy(ctx context.Context, field gra
 	}
 	res := resTmp.(*model.Puppy)
 	fc.Result = res
-	return ec.marshalNPuppy2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx, field.Selections, res)
+	return ec.marshalNPuppy2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_addPuppyToParents(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -901,7 +901,7 @@ func (ec *executionContext) _Mutation_addPuppyToParents(ctx context.Context, fie
 	}
 	res := resTmp.([]*model.Dog)
 	fc.Result = res
-	return ec.marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDogᚄ(ctx, field.Selections, res)
+	return ec.marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDogᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Puppy_id(ctx context.Context, field graphql.CollectedField, obj *model.Puppy) (ret graphql.Marshaler) {
@@ -1038,7 +1038,7 @@ func (ec *executionContext) _Puppy_breed(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.(*model.Breed)
 	fc.Result = res
-	return ec.marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
+	return ec.marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Puppy_parents(ctx context.Context, field graphql.CollectedField, obj *model.Puppy) (ret graphql.Marshaler) {
@@ -1073,7 +1073,7 @@ func (ec *executionContext) _Puppy_parents(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.([]*model.Dog)
 	fc.Result = res
-	return ec.marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDogᚄ(ctx, field.Selections, res)
+	return ec.marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDogᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_dogs(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1105,7 +1105,7 @@ func (ec *executionContext) _Query_dogs(ctx context.Context, field graphql.Colle
 	}
 	res := resTmp.([]*model.Dog)
 	fc.Result = res
-	return ec.marshalODog2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx, field.Selections, res)
+	return ec.marshalODog2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_breeds(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1137,7 +1137,7 @@ func (ec *executionContext) _Query_breeds(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.([]*model.Breed)
 	fc.Result = res
-	return ec.marshalOBreed2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
+	return ec.marshalOBreed2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_puppies(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1169,7 +1169,7 @@ func (ec *executionContext) _Query_puppies(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.([]*model.Puppy)
 	fc.Result = res
-	return ec.marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx, field.Selections, res)
+	return ec.marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query___type(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -2945,7 +2945,7 @@ func (ec *executionContext) ___Type(ctx context.Context, sel ast.SelectionSet, o
 
 // region    ***************************** type.gotpl *****************************
 
-func (ec *executionContext) unmarshalNAddPuppy2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐAddPuppy(ctx context.Context, v interface{}) (model.AddPuppy, error) {
+func (ec *executionContext) unmarshalNAddPuppy2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐAddPuppy(ctx context.Context, v interface{}) (model.AddPuppy, error) {
 	res, err := ec.unmarshalInputAddPuppy(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -2965,11 +2965,11 @@ func (ec *executionContext) marshalNBoolean2bool(ctx context.Context, sel ast.Se
 	return res
 }
 
-func (ec *executionContext) marshalNBreed2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v model.Breed) graphql.Marshaler {
+func (ec *executionContext) marshalNBreed2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v model.Breed) graphql.Marshaler {
 	return ec._Breed(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v *model.Breed) graphql.Marshaler {
+func (ec *executionContext) marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v *model.Breed) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -2979,11 +2979,11 @@ func (ec *executionContext) marshalNBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋ
 	return ec._Breed(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNDog2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v model.Dog) graphql.Marshaler {
+func (ec *executionContext) marshalNDog2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v model.Dog) graphql.Marshaler {
 	return ec._Dog(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDogᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Dog) graphql.Marshaler {
+func (ec *executionContext) marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDogᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Dog) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3007,7 +3007,7 @@ func (ec *executionContext) marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋgophql�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNDog2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx, sel, v[i])
+			ret[i] = ec.marshalNDog2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3020,7 +3020,7 @@ func (ec *executionContext) marshalNDog2ᚕᚖgithubᚗcomᚋdumunariᚋgophql�
 	return ret
 }
 
-func (ec *executionContext) marshalNDog2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v *model.Dog) graphql.Marshaler {
+func (ec *executionContext) marshalNDog2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v *model.Dog) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -3075,26 +3075,26 @@ func (ec *executionContext) marshalNID2ᚕstringᚄ(ctx context.Context, sel ast
 	return ret
 }
 
-func (ec *executionContext) unmarshalNNewBreed2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐNewBreed(ctx context.Context, v interface{}) (model.NewBreed, error) {
+func (ec *executionContext) unmarshalNNewBreed2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐNewBreed(ctx context.Context, v interface{}) (model.NewBreed, error) {
 	res, err := ec.unmarshalInputNewBreed(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNNewDog2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐNewDog(ctx context.Context, v interface{}) (model.NewDog, error) {
+func (ec *executionContext) unmarshalNNewDog2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐNewDog(ctx context.Context, v interface{}) (model.NewDog, error) {
 	res, err := ec.unmarshalInputNewDog(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNNewPuppy2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐNewPuppy(ctx context.Context, v interface{}) (model.NewPuppy, error) {
+func (ec *executionContext) unmarshalNNewPuppy2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐNewPuppy(ctx context.Context, v interface{}) (model.NewPuppy, error) {
 	res, err := ec.unmarshalInputNewPuppy(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNPuppy2githubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v model.Puppy) graphql.Marshaler {
+func (ec *executionContext) marshalNPuppy2githubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v model.Puppy) graphql.Marshaler {
 	return ec._Puppy(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNPuppy2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v *model.Puppy) graphql.Marshaler {
+func (ec *executionContext) marshalNPuppy2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v *model.Puppy) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -3402,7 +3402,7 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return graphql.MarshalBoolean(*v)
 }
 
-func (ec *executionContext) marshalOBreed2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v []*model.Breed) graphql.Marshaler {
+func (ec *executionContext) marshalOBreed2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v []*model.Breed) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -3429,7 +3429,7 @@ func (ec *executionContext) marshalOBreed2ᚕᚖgithubᚗcomᚋdumunariᚋgophql
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx, sel, v[i])
+			ret[i] = ec.marshalOBreed2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3442,14 +3442,14 @@ func (ec *executionContext) marshalOBreed2ᚕᚖgithubᚗcomᚋdumunariᚋgophql
 	return ret
 }
 
-func (ec *executionContext) marshalOBreed2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v *model.Breed) graphql.Marshaler {
+func (ec *executionContext) marshalOBreed2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐBreed(ctx context.Context, sel ast.SelectionSet, v *model.Breed) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Breed(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalODog2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v []*model.Dog) graphql.Marshaler {
+func (ec *executionContext) marshalODog2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v []*model.Dog) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -3476,7 +3476,7 @@ func (ec *executionContext) marshalODog2ᚕᚖgithubᚗcomᚋdumunariᚋgophql�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalODog2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx, sel, v[i])
+			ret[i] = ec.marshalODog2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3489,7 +3489,7 @@ func (ec *executionContext) marshalODog2ᚕᚖgithubᚗcomᚋdumunariᚋgophql�
 	return ret
 }
 
-func (ec *executionContext) marshalODog2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v *model.Dog) graphql.Marshaler {
+func (ec *executionContext) marshalODog2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐDog(ctx context.Context, sel ast.SelectionSet, v *model.Dog) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -3511,7 +3511,7 @@ func (ec *executionContext) marshalOInt2ᚖint(ctx context.Context, sel ast.Sele
 	return graphql.MarshalInt(*v)
 }
 
-func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v []*model.Puppy) graphql.Marshaler {
+func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v []*model.Puppy) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -3538,7 +3538,7 @@ func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophql
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOPuppy2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx, sel, v[i])
+			ret[i] = ec.marshalOPuppy2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3551,7 +3551,7 @@ func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophql
 	return ret
 }
 
-func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppyᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Puppy) graphql.Marshaler {
+func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppyᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Puppy) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -3578,7 +3578,7 @@ func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophql
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNPuppy2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx, sel, v[i])
+			ret[i] = ec.marshalNPuppy2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3591,7 +3591,7 @@ func (ec *executionContext) marshalOPuppy2ᚕᚖgithubᚗcomᚋdumunariᚋgophql
 	return ret
 }
 
-func (ec *executionContext) marshalOPuppy2ᚖgithubᚗcomᚋdumunariᚋgophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v *model.Puppy) graphql.Marshaler {
+func (ec *executionContext) marshalOPuppy2ᚖgithubᚗcomᚋdumunariᚋdogophqlᚋgraphᚋmodelᚐPuppy(ctx context.Context, sel ast.SelectionSet, v *model.Puppy) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

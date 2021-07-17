@@ -1,6 +1,6 @@
 package graph
 
-import "github.com/dumunari/gophql/graph/model"
+import "github.com/dumunari/dogophql/graph/model"
 
 // This file will not be regenerated automatically.
 //

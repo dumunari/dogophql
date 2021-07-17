@@ -1,4 +1,4 @@
-module github.com/dumunari/gophql
+module github.com/dumunari/dogophql
 
 go 1.16
 
